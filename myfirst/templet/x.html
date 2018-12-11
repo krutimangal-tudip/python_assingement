@@ -1,0 +1,16 @@
+<html>
+
+
+<h2>HTMf Forms</h2>
+
+<form action="{% url 'save_data'%}" method="POST">
+    {% csrf_token %}
+  First_name:<br>
+  <input type="text" name="first_name" value="Mickey">
+  <br>
+  Last_name:<br>
+  <input type="text" name="last_name" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+</html>
